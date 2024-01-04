@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "562756906266",
+    "project_id": "mboaculture-c02df",
+    "storage_bucket": "mboaculture-c02df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562756906266:android:08ee18f5426c15c72450a3",
+        "android_client_info": {
+          "package_name": "com.ingenieur.isi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW7XxYWfCHiMaC81EjO5zW-Tnrc0uzI7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

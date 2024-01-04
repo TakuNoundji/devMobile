@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar  color="light">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'settingsTitle' | translate}}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+
+  <div id="container">
+    <ion-card class="card">
+
+
+      
+
+
+      
+      <ion-item class="ion-margin-bottom">
+        <ion-select [(ngModel)]="selectedLang" (ionChange)="changeLang()">
+          <ion-select-option value="en">English</ion-select-option>
+          <ion-select-option value="fr">Français</ion-select-option>
+        </ion-select>
+        
+      </ion-item>
+
+
+    </ion-card>
+  </div>
+
+</ion-content>

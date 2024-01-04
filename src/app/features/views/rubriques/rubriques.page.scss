@@ -1,0 +1,80 @@
+ion-content{
+
+  --background: #7865f2;
+
+  .entete{
+    font-size: 1.5em;
+    color: white;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 20%;
+    left:10%;
+
+  }
+  #container {
+
+
+
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 53%;
+    transform: translateY(-50%);
+    padding: 4%;
+
+    .card{
+      height: 40vh;
+      --background: #FDD966;
+
+    }
+    swiper-container{
+      swiper-slide{
+        text-align: center;
+        box-shadow: none;
+
+
+        .card-artistes1{
+          border: 1px solid #2f5b44;
+          width: 95%;
+          height: 30vh;
+          border-radius: 12px;
+          padding-bottom: 5px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        .title{
+          // margin-left: 15px;
+          font-size: 1rem;
+          text-align: center;
+
+        }
+        h1{
+          padding: 0;
+          margin: 0;
+          
+          color: white;
+        }
+      }
+  }
+  .slide{
+    box-shadow: none;
+    padding-bottom: 10px;
+    height: 40vh;
+    text-align: center;
+    span{
+      padding-top: 30px;
+      height: 20vh;
+      text-align: center;
+
+
+    }
+
+
+
+
+  }
+
+}
+}

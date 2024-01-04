@@ -1,0 +1,19 @@
+<ion-content>
+  <div id="container">
+
+    <ion-card class="card">
+      <swiper-container [slidesPerView]="1" [loop]="true" [zoom]="true" [pagination]="true">
+        <swiper-slide>
+          <ion-card class="slide"> <span>{{ 'welcomeMessages' | translate }}</span> </ion-card>
+        </swiper-slide>
+
+        <swiper-slide>
+          <ion-card class="slide"> <span>{{ 'introMessage' | translate }}</span>  </ion-card>
+        </swiper-slide>
+      </swiper-container>
+      <ion-button color="" (click)="getPage()" routerLink="profile">
+        {{ 'startButton' | translate }}
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+
+    <ion-title>{{ 'congratulationsPage.pageTitle' | translate }}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-card class="card">
+
+    </ion-card>
+      <span> {{ username }}<br>
+        {{ 'congratulationsPage.scoreMessage' | translate }} </span>
+        <ion-card class="card1">
+          <ion-card-header>
+            <ion-card-title style="text-align: center;">
+              <span>
+                {{score}}
+              </span></ion-card-title>
+          </ion-card-header>
+        </ion-card>
+    </div>
+  <!-- <div class="container1">
+    <span> {{ username }}<br>
+      {{ 'congratulationsPage.scoreMessage' | translate }} </span>
+      <ion-card class="card1">
+        <ion-card-header>
+          <ion-card-title style="text-align: center;">
+            <span>
+              {{score}}
+            </span></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+  </div> -->
+  <br>
+  <br>
+  <br>
+
+  <div class="container2">
+    <ion-button (click)="shareScore()">
+      {{ 'congratulationsPage.shareScoreButton' | translate }} <br>
+      {{ 'congratulationsPage.withFriendsMessage' | translate }}
+    </ion-button>
+  </div>
+
+  <div class="container3">
+    <ion-button class="button2" routerLink="/home/rubriques">
+      {{ 'congratulationsPage.newGameButton' | translate }}
+    </ion-button>
+  </div>
+</ion-content>

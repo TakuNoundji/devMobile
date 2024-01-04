@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'choiceLevelPage' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-card class="card">
+      <span>
+        {{ 'chooseDifficultyMessage' | translate }}
+      </span>
+      <br>
+
+      <!-- Utilisez *ngFor pour itérer sur la liste des niveaux -->
+      <ion-button class="bouton" *ngFor="let niveau of niveaux" (click)="onPage(niveau)" >
+        {{ niveau.Libelle_niveau }}
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+<!-- ranking.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{"pageTitle"| translate}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Vérifiez si la liste des scores est vide -->
+  <ng-container *ngIf="rankedScores.length > 0; else noScores">
+    <!-- Affichez la liste des scores -->
+    <ion-list>
+      <ion-item *ngFor="let score of rankedScores">
+        <ion-label>
+          {{ username }}
+        </ion-label>
+        <ion-badge slot="end">
+          {{ score.totalScore }}
+        </ion-badge>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+  <!-- Affichez un message si la liste des scores est vide -->
+  <ng-template #noScores>
+    <p style="color: antiquewhite;">{{"noScoresAvailable"| translate}}</p>
+  </ng-template>
+</ion-content>

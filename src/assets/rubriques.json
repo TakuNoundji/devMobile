@@ -1,0 +1,32 @@
+[
+
+  {
+    "id": 2,
+    "libelle": "Gastronomie",
+    "photo": "assets/gastronomie.jpg"
+  },
+  {
+    "id": 4,
+    "libelle": "Population",
+    "photo": "assets/population.jpg"
+  }
+  ,
+  {
+    "id": 1,
+    "libelle": "Culture",
+    "photo": "assets/culture.jpg"
+  }
+  ,
+  {
+    "id": 5,
+    "libelle": "Organisation administrative au sein des ethnies",
+    "photo": "assets/ethnies.jpg"
+  },
+  {
+    "id": 3,
+    "libelle": "Musique",
+    "photo": "assets/musique.jpg"
+  }
+
+
+]

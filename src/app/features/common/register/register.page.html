@@ -1,0 +1,42 @@
+<ion-content>
+  <div id="container">
+    <ion-card class="card">
+
+
+        <div class="container1">
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input [(ngModel)]="username" type="text"></ion-input>
+          </ion-item>
+          
+
+
+            <!-- <ion-input label="Votre Pseudo" label-placement="floating" fill="outline" placeholder="Votre Pseudo" type="text"></ion-input> -->
+
+
+           
+          <br>
+          <div *ngIf="invitationMessage">
+            {{ invitationMessage }}
+          </div>
+          <br>
+          <br>
+
+          <div style="display: flex; width: 100%;">
+            <ion-button  routerLink="/onboarding">
+              Quitter
+            </ion-button>
+            <ion-button expand="full" (click)="login()">Login</ion-button>
+            <!-- <ion-button (click)="getPage()">
+              Valider
+            </ion-button> -->
+
+
+        </div>
+
+
+          </div>
+
+    </ion-card>
+  </div>
+</ion-content>

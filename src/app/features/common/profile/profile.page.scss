@@ -1,0 +1,137 @@
+ion-content {
+
+  --background: #7865f2;
+
+
+
+
+  #container {
+
+
+
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23%;
+
+    transform: translateY(-50%);
+    padding: 22%;
+
+    .card {
+      height: 20vh;
+      border-radius: 50%;
+
+    }
+
+
+
+
+  }
+
+
+  .container2{
+    position: absolute;
+    top: 20%;
+    //padding: 28%;
+
+    padding-left: 7%;
+    padding-top: 10%;
+
+  }
+
+  .container3{
+    position: absolute;
+    top: 30%;
+    //padding: 28%;
+
+    padding-left: 7%;
+    padding-top: 10%;
+
+  }
+  .container4{
+    position: absolute;
+    top: 40%;
+    //padding: 28%;
+
+    padding-left: 7%;
+    padding-top: 10%;
+
+  }
+  .container5{
+    position: absolute;
+    top: 50%;
+    //padding: 28%;
+
+    padding-left: 7%;
+
+    padding-top: 10%;
+
+  }
+
+
+
+  // .container3{
+
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 80%;
+
+  //  transform: translateY(-60%);
+  //   //transform: translateX(-80%);
+
+  //   padding: 22%;
+  //   .card1{
+  //     height: 20vh;
+  //     border-radius: 50%;
+  //     box-shadow: none;
+
+  //   }
+
+  // }
+
+    ion-button{
+      --background : #FDD966;
+      width: 40vh;
+
+    }
+    .button2{
+     // padding-left: 50%;
+      width: 40vh;
+
+    }
+
+
+
+
+
+
+
+}
+
+ion-title{
+  text-align: center;
+}
+
+
+img {
+  width: 50px; /* Taille initiale des images */
+  height: 50px;
+  transition: width 0.3s, height 0.3s; /* Animation de transition pour un agrandissement en douceur */
+}
+
+div {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Agrandissement de l'image au survol */
+div:hover img {
+  width: 70px; /* Taille agrandie au survol */
+  height: 70px;
+}
+
+.selected img {
+  border: 2px solid blue; /* Bordure bleue pour indiquer la sélection */
+}

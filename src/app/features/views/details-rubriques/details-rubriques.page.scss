@@ -1,0 +1,145 @@
+ion-content{
+
+  --background: #7865f2;
+
+  span {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #7865f2;
+  
+  }
+  .entete{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12%;
+    transform: translateY(-50%);
+    padding: 4%;
+    font-size: 2em;
+  }
+  .card-artistes1{
+    --background: #2A3164;
+   // height: 30vh;
+     margin-left: auto;
+    width: 15vh;
+    margin-right: auto;
+  
+  
+  
+  }
+
+
+  #container {
+
+
+
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23%;
+    transform: translateY(-50%);
+    padding: 4%;
+
+    .card{
+      height: 15vh;
+
+    }
+
+    swiper-container{
+      swiper-slide{
+        text-align: center;
+
+
+    }
+  }
+  .slide{
+    box-shadow: none;
+    padding-bottom: 5px;
+    height: 30vh;
+    text-align: center;
+    span{
+      padding-top: 30px;
+      height: 20vh;
+      text-align: center;
+
+
+    }
+
+
+
+
+  }
+  ion-button{
+    text-align: center;
+    padding-left: 30%;
+    //background-color: #2A3164;
+
+  }
+
+}
+
+#container1{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4%;
+
+  .card1{
+    height: 25vh;
+    background-color: #2A3164;
+    .bouton1{
+      // position: absolute;
+
+      // transform: translateY(-50%);
+      padding: 8%;
+      padding-left: 6%;
+      display: flex;
+
+
+
+    }
+
+  }
+
+}
+#container2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75%;
+
+  transform: translateY(-50%);
+  padding: 8%;
+
+}
+
+.bouton{
+  --background : #8A00FF;
+
+}
+
+.bouton12{
+  padding-left: 10%;
+}
+
+.bouton111{
+  --background : #383E6E;
+
+
+
+}
+
+
+}
+
+ion-title{
+  text-align: center;
+}
+
+
+

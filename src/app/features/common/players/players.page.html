@@ -1,0 +1,13 @@
+<!-- players.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Players</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let profile of profiles" (click)="ionViewWillEnter()">
+      {{ profile.username }}
+    </ion-item>
+  </ion-list>
+</ion-content>

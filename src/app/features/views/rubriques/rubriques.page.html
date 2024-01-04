@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{"rubriques"| translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <span class="entete">{{"chooseThemeMessage"| translate}}</span>
+  <div id="container">
+      <!-- <swiper-container [slidesPerView]="1" [loop]="true" [zoom]="true">
+        <swiper-wrapper *ngIf="categories && categories.length">
+          <swiper-slide *ngFor="let categorie of categories">
+            <ion-card class="card-artistes1"  (click)="onPage()">
+              <span class="title">{{categorie.Libelle_categorie}}</span>
+            </ion-card>
+          </swiper-slide>
+        </swiper-wrapper>
+      </swiper-container> -->
+
+      <swiper-container [slidesPerView]="1.25" [loop]="true" [zoom]="true" [pagination]="true">
+        <swiper-slide *ngFor="let item of categories">
+          <ion-card  (click)="onPage(item)"             class="card-artistes1"
+          style="background-image: url({{item.Image_categorie}});">
+          <br><br><br><br>
+            <h1>{{item.Libelle_categorie}}</h1>
+          </ion-card>
+        </swiper-slide>
+    </swiper-container>
+
+  </div>
+</ion-content>

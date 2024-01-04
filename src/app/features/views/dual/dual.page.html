@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ "QUIZ_TITLE" | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content class="ion-padding">
+
+  <span  class="catniv" >
+    <ion-badge color="dark"><ion-icon name="home-outline"></ion-icon></ion-badge>&nbsp;
+    
+    <ion-badge color="dark">{{data.cat}}<ion-icon name="chevron-forward-outline"></ion-icon>{{data.niv}}</ion-badge>&nbsp;
+  <ion-badge color="dark" class="compte" shape="round" >taille/total</ion-badge>
+  </span>
+  <span class="encours">
+    <ion-badge color="warning">3 Points</ion-badge> &nbsp; <p class="blanc">En Jeu Pendant</p> &nbsp;<ion-badge color="warning"></ion-badge>
+  </span>
+<br> <br> <br> <br>
+
+  <ion-card>
+    <ion-card-header>
+      <div class="quiz-question">{{ PoseQuestion }}</div>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- {{PoseQuestion}} -->
+
+      <div *ngFor="let joueur of joueurs; let i=index">
+        <ion-list *ngIf="currentPlayerIndex === i">
+          
+          <div class="quiz-answer" *ngFor="let item of reponses" (click)="onReponseClick(item,joueur)">
+            <span class="quiz-answer-text">{{ item.choix }}</span>
+          </div>
+        </ion-list>
+    </div>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+</ion-content>
